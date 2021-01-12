@@ -116,18 +116,21 @@ void LCD_print(u16 x,u16 y, int c,u16 color ,uint8_t size)
 	}
 	
 }
+
+int output_light=0;
 void LCD_smooth_on(int val)
 {
 	delay(100);
-	for(;lcd_light<1024;lcd_light+=4){
-		analogWrite(TFT_LIGHT,lcd_light);
+	
+	for(;output_light<lcd_light;output_light+=5){
+		analogWrite(TFT_LIGHT,output_light);
 		delay(val);
 	}
 }
 void LCD_smooth_off(int val)
 {
-	for(;lcd_light>0;lcd_light-=4){
-		analogWrite(TFT_LIGHT,lcd_light);
+	for(;output_light>0;output_light-=5){
+		analogWrite(TFT_LIGHT,output_light);
 		delay(val);
 	}
 	delay(100);

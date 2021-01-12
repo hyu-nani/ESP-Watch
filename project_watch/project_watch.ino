@@ -1,3 +1,4 @@
+
 /*********************************
  ESP-12F
  *********************************/
@@ -14,6 +15,7 @@
 #define SW_R D4
 
 #include <SPI.h>
+#include <EEPROM.h>
 #include "image.h"
 #include "GC9A01A.h"
 #include "LCD_basic.h"
@@ -27,6 +29,9 @@ char sw_check();
 #include "mode.h"
 
 void setup() {
+	EEPROM.begin(512);
+	lcd_light = EEPROM.read(1);
+	if(lcd_light < 1||lcd_light>1000){lcd_light = 1000;}
 	pinMode(SW_L,INPUT);
 	pinMode(SW_S,INPUT);
 	pinMode(SW_R,INPUT);

@@ -115,23 +115,28 @@ void setting()
 			if (cursor_y == 80){
 				LCD_print(70,40,"Brightness",WHITE,2);
 				while(1){
-					LCD_Rect(10,110,220,5,YELLOW);
-					int bar = map(lcd_light,0,1024,0,210);
-					LCD_fill_Rect(10+bar,110,5,5,YELLOW);
+					LCD_fill_Rect(10,110,220,5,YELLOW);
+					LCD_fill_Rect(11,111,218,3,BG_Set_Color);
+					int bar = map(lcd_light,0,1000,0,210);
+					LCD_fill_Rect(10+bar,111,5,3,WHITE);
 					LCD_fill_Rect(70,70,30,8,BG_Set_Color);
 					LCD_print(70,70,lcd_light,WHITE,1);
-					delay(100);
+					delay(50);
 					if(digitalRead(SW_L)==0){
-						lcd_light+=5;
+						if(lcd_light<980)
+							lcd_light+=20;
 						analogWrite(TFT_LIGHT,lcd_light);
 					}
 					else if(digitalRead(SW_R)==0){
-						lcd_light-=5;
+						if(lcd_light>20)
+							lcd_light-=20;
 						analogWrite(TFT_LIGHT,lcd_light);
 					}
 					else if(digitalRead(SW_S)==0){
 						mode_x--;
 						delay(1000);
+						EEPROM.write(1,lcd_light);
+						EEPROM.commit(); //store
 						LCD_Fill(BG_Set_Color);
 						break;
 					}
