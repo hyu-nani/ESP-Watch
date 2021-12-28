@@ -10,12 +10,12 @@
 
 #define __AVR_ATmega328p__
 #define __AVR_ATmega328P__
-#define ARDUINO 108013
+#define ARDUINO 108015
 #define ARDUINO_MAIN
 #define F_CPU 16000000L
 #define __AVR__
 #define F_CPU 16000000L
-#define ARDUINO 108013
+#define ARDUINO 108015
 #define ARDUINO_AVR_NANO
 #define ARDUINO_ARCH_AVR
 #include "pins_arduino.h" 
