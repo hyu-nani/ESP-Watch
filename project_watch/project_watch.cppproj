@@ -5,7 +5,7 @@
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
     <ProjectGuid>{d09c6633-022e-405e-9eb0-9dda7be12315}</ProjectGuid>
-    <avrdevice>atmega328p</avrdevice>
+    <avrdevice>ATmega2560</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
     <Language>CPP</Language>
@@ -54,28 +54,44 @@
   <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
   <avrgcc.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__AVR_ATmega328p__</Value>
-      <Value>__AVR_ATmega328P__</Value>
-      <Value>ARDUINO=108013</Value>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108015</Value>
       <Value>ARDUINO_MAIN</Value>
-      <Value>F_CPU=16000000L</Value>
-      <Value>__AVR__</Value>
-      <Value>ARDUINO_AVR_NANO</Value>
-      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>NONOSDK22x_190703=1</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>LWIP_FEATURES=1</Value>
+      <Value>LWIP_IPV6=0</Value>
+      <Value>ARDUINO_ESP8266_NODEMCU</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+      <Value>LED_BUILTIN=2</Value>
+      <Value>FLASHMODE_DIO</Value>
     </ListValues>
   </avrgcc.compiler.symbols.DefSymbols>
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../project_watch</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include-fixed</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include/avr</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/SPI</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/EEPROM</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/avr</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/libb64</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/variants/nodemcu</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
       <Value>{vm.intellisense.add-paths}</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
@@ -89,28 +105,44 @@
   <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
   <avrgcccpp.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__AVR_ATmega328p__</Value>
-      <Value>__AVR_ATmega328P__</Value>
-      <Value>ARDUINO=108013</Value>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108015</Value>
       <Value>ARDUINO_MAIN</Value>
-      <Value>F_CPU=16000000L</Value>
-      <Value>__AVR__</Value>
-      <Value>ARDUINO_AVR_NANO</Value>
-      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>NONOSDK22x_190703=1</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>LWIP_FEATURES=1</Value>
+      <Value>LWIP_IPV6=0</Value>
+      <Value>ARDUINO_ESP8266_NODEMCU</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+      <Value>LED_BUILTIN=2</Value>
+      <Value>FLASHMODE_DIO</Value>
     </ListValues>
   </avrgcccpp.compiler.symbols.DefSymbols>
   <avrgcccpp.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../project_watch</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include-fixed</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include/avr</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/SPI</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/EEPROM</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/avr</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/libb64</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/variants/nodemcu</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
       <Value>{vm.intellisense.add-paths}</Value>
     </ListValues>
   </avrgcccpp.compiler.directories.IncludePaths>
@@ -122,7 +154,7 @@
   <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
 </AvrGccCpp>
     </ToolchainSettings>
-    <VMSETTING_IncludePaths>../../../project_watch;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs;C:/PROGRA~2/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include-fixed;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include/avr;C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include;C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>../../../project_watch;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs;C:/PROGRA~2/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include-fixed;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include/avr;C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include;C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/SPI;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/EEPROM;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/avr;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/libb64;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/spiffs;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/umm_malloc;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/variants/nodemcu;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip/include;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/libc/xtensa-lx106-elf/include;{build.path}/core;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/lib/gcc/xtensa-lx106-elf/4.8.2/include;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include;</VMSETTING_IncludePaths>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
@@ -136,28 +168,44 @@
   <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
   <avrgcc.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__AVR_ATmega328p__</Value>
-      <Value>__AVR_ATmega328P__</Value>
-      <Value>ARDUINO=108013</Value>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108015</Value>
       <Value>ARDUINO_MAIN</Value>
-      <Value>F_CPU=16000000L</Value>
-      <Value>__AVR__</Value>
-      <Value>ARDUINO_AVR_NANO</Value>
-      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>NONOSDK22x_190703=1</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>LWIP_FEATURES=1</Value>
+      <Value>LWIP_IPV6=0</Value>
+      <Value>ARDUINO_ESP8266_NODEMCU</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+      <Value>LED_BUILTIN=2</Value>
+      <Value>FLASHMODE_DIO</Value>
     </ListValues>
   </avrgcc.compiler.symbols.DefSymbols>
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../project_watch</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include-fixed</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include/avr</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/SPI</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/EEPROM</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/avr</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/libb64</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/variants/nodemcu</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
       <Value>{vm.intellisense.add-paths}</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
@@ -171,28 +219,44 @@
   <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
   <avrgcccpp.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__AVR_ATmega328p__</Value>
-      <Value>__AVR_ATmega328P__</Value>
-      <Value>ARDUINO=108013</Value>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108015</Value>
       <Value>ARDUINO_MAIN</Value>
-      <Value>F_CPU=16000000L</Value>
-      <Value>__AVR__</Value>
-      <Value>ARDUINO_AVR_NANO</Value>
-      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>NONOSDK22x_190703=1</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>LWIP_FEATURES=1</Value>
+      <Value>LWIP_IPV6=0</Value>
+      <Value>ARDUINO_ESP8266_NODEMCU</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+      <Value>LED_BUILTIN=2</Value>
+      <Value>FLASHMODE_DIO</Value>
     </ListValues>
   </avrgcccpp.compiler.symbols.DefSymbols>
   <avrgcccpp.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../project_watch</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include-fixed</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include/avr</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include</Value>
-      <Value>C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/SPI</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/EEPROM</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/avr</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/libb64</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/variants/nodemcu</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
       <Value>{vm.intellisense.add-paths}</Value>
     </ListValues>
   </avrgcccpp.compiler.directories.IncludePaths>
@@ -204,7 +268,7 @@
   <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
 </AvrGccCpp>
     </ToolchainSettings>
-    <VMSETTING_IncludePaths>../../../project_watch;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs;C:/PROGRA~2/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include-fixed;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include/avr;C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include;C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>../../../project_watch;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs;C:/PROGRA~2/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include-fixed;C:/PROGRA~2/Arduino/hardware/tools/avr/avr/include/avr;C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include;C:/PROGRA~2/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/SPI;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/EEPROM;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/avr;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/libb64;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/spiffs;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/umm_malloc;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/variants/nodemcu;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip/include;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/libc/xtensa-lx106-elf/include;{build.path}/core;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/xtensa-lx106-elf/include;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-4-b40a506/lib/gcc/xtensa-lx106-elf/4.8.2/include;C:/Users/cube_/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include;</VMSETTING_IncludePaths>
   </PropertyGroup>
   <ItemGroup>
     <None Include="project_watch.ino">

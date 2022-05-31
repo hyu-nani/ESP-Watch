@@ -125,12 +125,12 @@ void setting()
 					if(digitalRead(SW_L)==0){
 						if(lcd_light<980)
 							lcd_light+=20;
-						analogWrite(TFT_LIGHT,lcd_light);
+						//analogWrite(TFT_LIGHT,lcd_light);
 					}
 					else if(digitalRead(SW_R)==0){
 						if(lcd_light>20)
 							lcd_light-=20;
-						analogWrite(TFT_LIGHT,lcd_light);
+						//analogWrite(TFT_LIGHT,lcd_light);
 					}
 					else if(digitalRead(SW_S)==0){
 						mode_x--;

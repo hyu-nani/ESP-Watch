@@ -1,18 +1,18 @@
 
 /*********************************
- ESP-12F
+ ESP-32
  *********************************/
-#define TFT_DC	D1
-#define TFT_RST	D2
-#define TFT_CS	D6
-#define TFT_LIGHT D8
+#define TFT_DC	17
+#define TFT_RST	5
+#define TFT_CS	18
+#define TFT_LIGHT 19
 
 #define LCD_W 240
 #define LCD_H 240
  
-#define SW_L D0
-#define SW_S D3
-#define SW_R D4
+#define SW_L 23
+#define SW_S 22
+#define SW_R 21
 
 #include <SPI.h>
 #include <EEPROM.h>
@@ -20,7 +20,7 @@
 #include "GC9A01A.h"
 #include "LCD_basic.h"
 #include "LCD_action.h"
-#include "WIFI.h"
+//#include "WIFI.h"
 #include <math.h>
 
 int page = 0;
@@ -36,7 +36,7 @@ void setup() {
 	pinMode(SW_S,INPUT);
 	pinMode(SW_R,INPUT);
 	Serial.begin(9600);
-	wifi_init();
+	//wifi_init();
 	LCD_portset();
 	SPI.begin();
 	mySPISettings = SPISettings(80000000, MSBFIRST, SPI_MODE0); //ESP max speed 80MHz
@@ -46,8 +46,8 @@ void setup() {
 	delay(500);
 	LCD_smooth_off(2);
 	LCD_Fill(BLACK);
-	now = time(nullptr);
-	configTime(GMT_SEC,DST_SEC,"kr.pool.ntp.org");
+	//now = time(nullptr);
+	//configTime(GMT_SEC,DST_SEC,"kr.pool.ntp.org");
 }
 void loop() {
 	while(page == 0){ //intro
@@ -65,10 +65,11 @@ void loop() {
 		}
 	}
 	while(page == 1){ //clock
+		/*
 		LCD_Fill(BG_Clock_Color);
 		clock(now);
 		LCD_smooth_on(1);
-		configTime(GMT_SEC,DST_SEC,"pool.ntp.org");
+		//configTime(GMT_SEC,DST_SEC,"pool.ntp.org");
 		while(1){
 			now_ms = millis();
 			if(now_ms-prev_ms>1000){
@@ -93,6 +94,6 @@ void loop() {
 				LCD_smooth_off(1);
 				break;
 			}
-		}
+		}*/
 	}
 }

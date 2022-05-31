@@ -1,4 +1,4 @@
-#include <ESP8266WiFi.h>
+//#include <ESP8266WiFi.h>
 #include "time.h"
 
 #define GMT		  8
